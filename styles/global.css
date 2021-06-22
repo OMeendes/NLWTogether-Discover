@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
@@ -43,6 +44,7 @@ body, button, input, textarea {
   height: 1px;
   width: 1px;
   padding: 0;
+  margin: -1px;
   overflow: hidden;
   clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -58,12 +60,16 @@ button, .button {
   font-family: 'Poppins';
   font-weight: 500;
   line-height: 0;
+  /* Alinhamento */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* cores */
   background: var(--blue);
   color: var(--white);
+  /* Transições */
   transition: filter .2s;
+  /* cursor */
   cursor: pointer;
 }
 
@@ -71,7 +77,7 @@ button:hover .button:hover {
   filter: brightness(1.2);
 }
 
-button>img, .button img {
+button>img, .button>img {
   margin-right: 1rem;
   width: 2rem;
 }

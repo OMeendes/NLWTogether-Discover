@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!--View Port -->
-  <meta name="viewport" content="width=device-width, initial-scale 1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/styles/global.css">
@@ -31,6 +31,8 @@
     </header>
 
     <div id="bg"></div>
+    <div class="ball top"></div>
+    <div class="ball bottom"></div>
 
     <main>
       <div class="container">
@@ -41,8 +43,9 @@
             <label class="sr-only" for="room-id">Código da Sala</label>
             <input type="number" id="room-id" placeholder="Código da sala">
 
-            <button>Entrar na Sala
+            <button>
               <img src="/assets/enter-room.svg" alt="Entrar na sala">
+              Entrar na Sala
             </button>
           </form>
         </section>
